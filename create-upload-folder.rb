@@ -3,41 +3,66 @@ require 'uri'
 require 'cgi'
 require 'fileutils'
 require 'active_support/all'
+require 'optparse'
+require 'optparse/date'
 
-date = Date.parse(ARGV[0])
-volume = ARGV[1] || 00
-issue = ARGV[2] || 00
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: #{__FILE__} --date DATE --volume VOLUME --issue=ISSUE --pages=PAGES"
+  opts.separator ""
+  opts.separator "Specific options:"
+  opts.on('-d', '--date [DATE]', Date, 'Issue date') do |date|
+    options[:date] = date
+  end
+  opts.on('-v', '--volume [VOLUME]', 'Volume number') do |volume|
+    options[:volume] = volume
+  end
+  opts.on('-i', '--issue [VOLUME]', 'Issue number') do |issue|
+    options[:issue] = issue
+  end
+  opts.on('-p', '--pages [VOLUME]', 'Page count') do |pages|
+    options[:pages] = pages
+  end
+end.parse!
+
+if options[:pages].nil? || options[:pages].nil? || options[:pages].nil? || options[:pages].nil?
+  puts "Missing options! See --help for instructions."
+  return 1
+end
+
 username = 'internetarchive@yearg.in'
 basedirectory = "/Users/#{ENV['LOGNAME']}/Downloads"
 
 # params = {
-#   identifier: "TheVolette#{date.strftime('%Y%m%d')}",
+#   identifier: "TheVolette#{options[:date].strftime('%Y%m%d')}",
 #   collection: 'thepacer',
-#   date: date.strftime('%Y-%m-%d'),
-#   title: "The Volette - #{date.strftime('%B %-e, %Y')}",
+#   date: options[:date].strftime('%Y-%m-%d'),
+#   title: "The Volette - #{options[:date].strftime('%B %-e, %Y')}",
 #   description: CGI::escapeHTML(File.read(File.join(File.dirname(__FILE__), 'Volette Description.html'))),
 #   creator: 'The Volette',
 #   subject: 'student newspaper,ut martin,tennessee-martin',
 #   language: 'eng',
 #   lccn: 'sn2005062321',
 #   oclc: '50957220',
-#   volume: volume,
-#   issue: issue
+#   volume: options[:volume],
+#   issue: options[:issue],
+#   pages: options[:pages]
 # }
 
 params = {
-  identifier: "ThePacer#{date.strftime('%Y%m%d')}",
+  identifier: "ThePacer#{options[:date].strftime('%Y%m%d')}",
   collection: 'thepacer',
-  date: date.strftime('%Y-%m-%d'),
-  title: "The Pacer - #{date.strftime('%B %-e, %Y')}",
+  date: options[:date].strftime('%Y-%m-%d'),
+  title: "The Pacer - #{options[:date].strftime('%B %-e, %Y')}",
   description: CGI::escapeHTML(File.read(File.join(File.dirname(__FILE__), 'Pacer Description.html'))),
   creator: 'The Pacer',
   subject: 'student newspaper,ut martin,tennessee-martin',
   language: 'eng',
   lccn: 'sn2005062320',
   oclc: '50957347',
-  volume: volume,
-  issue: issue
+  volume: options[:volume],
+  issue: options[:issue],
+  pages: options[:pages]
 }
 
 # Make the working directory
@@ -67,6 +92,7 @@ File.open(File.join(basedirectory, params[:identifier], "#{params[:identifier]}_
   # f.write "  <oclc-id>#{params['oclc']}</oclc-id>",
   f.write "  <issue>#{params[:issue]}</issue>\n"
   f.write "  <volume>#{params[:volume]}</volume>\n"
+  f.write "  <pages>#{options[:pages]}</pages>\n"
   f.write "</metadata>\n"
 end
 
