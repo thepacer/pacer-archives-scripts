@@ -1,0 +1,259 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "internetarchive": {
+        "pkg-path": "internetarchive"
+      },
+      "ruby": {
+        "pkg-path": "ruby"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {}
+  },
+  "packages": [
+    {
+      "attr_path": "internetarchive",
+      "broken": false,
+      "derivation": "/nix/store/r3cfmyr4x5yyff0n71l3qb69mq84z3av-python3.13-internetarchive-5.7.1.drv",
+      "description": "Python and Command-Line Interface to Archive.org",
+      "install_id": "internetarchive",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c5296fdd05cfa2c187990dd909864da9658df755",
+      "name": "internetarchive-5.7.1",
+      "pname": "internetarchive",
+      "rev": "c5296fdd05cfa2c187990dd909864da9658df755",
+      "rev_count": 933481,
+      "rev_date": "2026-01-23T12:18:02Z",
+      "scrape_date": "2026-01-26T04:35:28.442462Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.7.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/cbhh3x6a6l3rpwh3n61ng6cl2yi2bk2p-python3.13-internetarchive-5.7.1-dist",
+        "out": "/nix/store/2pn301sa4wbjzh3vqr5xhzvnjjw0aw5z-python3.13-internetarchive-5.7.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "internetarchive",
+      "broken": false,
+      "derivation": "/nix/store/lyphyz4bdgadd9aywkq2kmlls7n3r5zz-python3.13-internetarchive-5.7.1.drv",
+      "description": "Python and Command-Line Interface to Archive.org",
+      "install_id": "internetarchive",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c5296fdd05cfa2c187990dd909864da9658df755",
+      "name": "internetarchive-5.7.1",
+      "pname": "internetarchive",
+      "rev": "c5296fdd05cfa2c187990dd909864da9658df755",
+      "rev_count": 933481,
+      "rev_date": "2026-01-23T12:18:02Z",
+      "scrape_date": "2026-01-26T05:17:17.313767Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.7.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/12577d4c1ng6cj8cvggfivwcgqdn3xsk-python3.13-internetarchive-5.7.1-dist",
+        "out": "/nix/store/0lpbywrc3s1m2ir574l0ric59hqggsr2-python3.13-internetarchive-5.7.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "internetarchive",
+      "broken": false,
+      "derivation": "/nix/store/3mz7ap77aqdvccrwza2ikn8nkjbwxflq-python3.13-internetarchive-5.7.1.drv",
+      "description": "Python and Command-Line Interface to Archive.org",
+      "install_id": "internetarchive",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c5296fdd05cfa2c187990dd909864da9658df755",
+      "name": "internetarchive-5.7.1",
+      "pname": "internetarchive",
+      "rev": "c5296fdd05cfa2c187990dd909864da9658df755",
+      "rev_count": 933481,
+      "rev_date": "2026-01-23T12:18:02Z",
+      "scrape_date": "2026-01-26T05:56:21.462500Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.7.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/ifk3v22p0l8p59brqy7w64i3c2b57n56-python3.13-internetarchive-5.7.1-dist",
+        "out": "/nix/store/yx7l48ijbz30yisr2c13i5j58wmgx0fv-python3.13-internetarchive-5.7.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "internetarchive",
+      "broken": false,
+      "derivation": "/nix/store/cvfz9z09vx1qzbp23i0msld5nq20v7jc-python3.13-internetarchive-5.7.1.drv",
+      "description": "Python and Command-Line Interface to Archive.org",
+      "install_id": "internetarchive",
+      "license": "AGPL-3.0-or-later",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c5296fdd05cfa2c187990dd909864da9658df755",
+      "name": "internetarchive-5.7.1",
+      "pname": "internetarchive",
+      "rev": "c5296fdd05cfa2c187990dd909864da9658df755",
+      "rev_count": 933481,
+      "rev_date": "2026-01-23T12:18:02Z",
+      "scrape_date": "2026-01-26T06:51:27.849585Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.7.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/pyy5gb6as1zfmxk0q8zphypkb26hia1h-python3.13-internetarchive-5.7.1-dist",
+        "out": "/nix/store/34vgi289fb02lnw88s6g6cv7dbj3djf8-python3.13-internetarchive-5.7.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ruby",
+      "broken": false,
+      "derivation": "/nix/store/za0xa8mi754k45rf860a5b17lzql8i1d-ruby-3.3.10.drv",
+      "description": "Object-oriented language for quick and easy programming",
+      "install_id": "ruby",
+      "license": "Ruby",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c5296fdd05cfa2c187990dd909864da9658df755",
+      "name": "ruby-3.3.10",
+      "pname": "ruby",
+      "rev": "c5296fdd05cfa2c187990dd909864da9658df755",
+      "rev_count": 933481,
+      "rev_date": "2026-01-23T12:18:02Z",
+      "scrape_date": "2026-01-26T04:36:38.987462Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.3.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "devdoc": "/nix/store/1rfqp0848j3gnm222ls3bipk1azcrrq3-ruby-3.3.10-devdoc",
+        "out": "/nix/store/d9wal8y7w1zpvyas3x1q4ykz880mmklk-ruby-3.3.10"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ruby",
+      "broken": false,
+      "derivation": "/nix/store/avf8hd4mzqk2cg9j3k71i5axl9h98h0r-ruby-3.3.10.drv",
+      "description": "Object-oriented language for quick and easy programming",
+      "install_id": "ruby",
+      "license": "Ruby",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c5296fdd05cfa2c187990dd909864da9658df755",
+      "name": "ruby-3.3.10",
+      "pname": "ruby",
+      "rev": "c5296fdd05cfa2c187990dd909864da9658df755",
+      "rev_count": 933481,
+      "rev_date": "2026-01-23T12:18:02Z",
+      "scrape_date": "2026-01-26T05:18:52.593552Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.3.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "devdoc": "/nix/store/arvi0gqvw07ngbi2ci20dn5ka2jz5irv-ruby-3.3.10-devdoc",
+        "out": "/nix/store/1hlahw0ijkxx1aqy3x41k3gxpgv34g7d-ruby-3.3.10"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ruby",
+      "broken": false,
+      "derivation": "/nix/store/8yz7lbgn7ymgl3p7dnbsl3cdisp1jmn9-ruby-3.3.10.drv",
+      "description": "Object-oriented language for quick and easy programming",
+      "install_id": "ruby",
+      "license": "Ruby",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c5296fdd05cfa2c187990dd909864da9658df755",
+      "name": "ruby-3.3.10",
+      "pname": "ruby",
+      "rev": "c5296fdd05cfa2c187990dd909864da9658df755",
+      "rev_count": 933481,
+      "rev_date": "2026-01-23T12:18:02Z",
+      "scrape_date": "2026-01-26T05:57:26.435235Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.3.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "devdoc": "/nix/store/wix1487x3br4gxa0il4q6llz5xyqxspl-ruby-3.3.10-devdoc",
+        "out": "/nix/store/as6xdshxpansvkag8zqr602ajkn9079z-ruby-3.3.10"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ruby",
+      "broken": false,
+      "derivation": "/nix/store/wm4z8sya8ry98l2lyyvpbkgslj1svl65-ruby-3.3.10.drv",
+      "description": "Object-oriented language for quick and easy programming",
+      "install_id": "ruby",
+      "license": "Ruby",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c5296fdd05cfa2c187990dd909864da9658df755",
+      "name": "ruby-3.3.10",
+      "pname": "ruby",
+      "rev": "c5296fdd05cfa2c187990dd909864da9658df755",
+      "rev_count": 933481,
+      "rev_date": "2026-01-23T12:18:02Z",
+      "scrape_date": "2026-01-26T06:53:09.308534Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "3.3.10",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "devdoc": "/nix/store/kah8xsbcd10iakxqmlw558iarhsrd5vi-ruby-3.3.10-devdoc",
+        "out": "/nix/store/6jz2pgmsh06z9a83qi33f6lp9w2q6mzm-ruby-3.3.10"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
