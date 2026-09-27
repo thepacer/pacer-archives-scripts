@@ -79,11 +79,6 @@ params = {
 # Make the working directory
 FileUtils.mkdir_p(File.join(basedirectory, params[:identifier]))
 
-# Write the file manifest
-File.open(File.join(basedirectory, params[:identifier], "#{params[:identifier]}_files.xml"), 'w') do |f|
-  f.write('<files />')
-end
-
 # Write the meta data file
 File.open(File.join(basedirectory, params[:identifier], "#{params[:identifier]}_meta.xml"), 'w') do |f|
   f.write "<metadata>\n"
